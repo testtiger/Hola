@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Smoke-Test-Suite" duration-ms="50713" started-at="2014-05-28T10:56:03Z" finished-at="2014-05-28T10:56:53Z">
+    <groups>
+    </groups>
+    <test name="Login-test" duration-ms="50713" started-at="2014-05-28T10:56:03Z" finished-at="2014-05-28T10:56:53Z">
+      <class name="com.diw.test.LoginTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.LoginTest@5e04d6b0]" name="setup" is-config="true" duration-ms="1593" started-at="2014-05-28T16:26:03Z" finished-at="2014-05-28T16:26:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.openqa.selenium.chrome.ChromeDriver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[com.diw.main.DriverManager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.diw.test.LoginTest@5e04d6b0]" name="setDriver" is-config="true" duration-ms="14672" started-at="2014-05-28T16:26:04Z" depends-on-methods="com.diw.main.RootTest.setup" finished-at="2014-05-28T16:26:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="checkUserLogin(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.LoginTest@5e04d6b0]" name="checkUserLogin" duration-ms="29286" started-at="2014-05-28T16:26:19Z" finished-at="2014-05-28T16:26:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[diwakara.kumar77@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserLogin -->
+        <test-method status="PASS" signature="checkUserLogout()[pri:0, instance:com.diw.test.LoginTest@5e04d6b0]" name="checkUserLogout" duration-ms="3937" started-at="2014-05-28T16:26:48Z" finished-at="2014-05-28T16:26:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserLogout -->
+        <test-method status="PASS" signature="tear()[pri:0, instance:com.diw.test.LoginTest@5e04d6b0]" name="tear" is-config="true" duration-ms="1218" started-at="2014-05-28T16:26:52Z" finished-at="2014-05-28T16:26:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+      </class> <!-- com.diw.test.LoginTest -->
+      <class name="com.diw.main.DriverManager">
+        <test-method status="PASS" signature="setupChromeAndIEDriverProps(java.lang.String, java.lang.String)[pri:0, instance:com.diw.main.DriverManager@4717fd27]" name="setupChromeAndIEDriverProps" is-config="true" duration-ms="7" started-at="2014-05-28T16:26:03Z" finished-at="2014-05-28T16:26:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Drivers\chromedriver.exe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Drivers\IEDriverServer.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupChromeAndIEDriverProps -->
+      </class> <!-- com.diw.main.DriverManager -->
+    </test> <!-- Login-test -->
+  </suite> <!-- Smoke-Test-Suite -->
+</testng-results>

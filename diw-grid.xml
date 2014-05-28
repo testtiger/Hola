@@ -1,4 +1,4 @@
-<suite name="diw" parallel="tests" thread-count="4">
+<suite name="Diw-Test-Suite" parallel="tests" thread-count="4">
 	<listeners>
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
@@ -15,14 +15,14 @@
 	<parameter name="pwd" value="123456" />
 	<parameter name="classname" value="com.diw.main.GridManager" />
 
-	<test name="first">
+	<test name="Firefox-Browser-Test">
 		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="com.diw.main.GridManager" />
 			<class name="com.diw.test.LoginTest" />
 		</classes>
 	</test>
-	<test name="two">
+	<test name="Chrome-Browser-Test">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.diw.main.GridManager" />
