@@ -1,0 +1,308 @@
+body {
+
+	font-family: Ubuntu, arial, sans-serif; line-height: 1.8em;  margin: 1.8em 1em;
+    margin: 0px 0px 5px 5px;
+}
+
+ul {
+    margin: 0px;
+	font-size: 3.3em
+	font-family: Ubuntu, arial, sans-serif; 
+}
+
+li {
+   list-style-type: none;
+   border: 0px solid #C8C8AC;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navigator-selected {
+    background: #C5C9CB;
+}
+
+.wrapper {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 350px;
+    right: 0;
+	width: 920px;
+    overflow: auto;
+}
+
+.navigator-root {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    width: 350px;
+    overflow-y: auto;
+}
+
+.suite {
+    margin: 0px 10px 10px 0px;
+    background-color: #EBF3FF;
+}
+
+.suite-name {
+    padding-left: 10px;
+    font-size: 25px;
+    font-family: Ubuntu, arial, sans-serif;
+}
+
+.main-panel-header {
+    padding: 5px;
+    background-color: #C2C2FF; //afeeee;
+    font-family: Ubuntu, arial, sans-serif;
+    font-size: 18px;
+}
+
+.main-panel-content {
+    padding: 1px;
+    margin-bottom: 10px;
+    background-color: #EBEBE6; //d0ffff;
+}
+
+.rounded-window {
+   background-color: #EBEBE6;
+}
+
+.rounded-window-top {
+ 
+    border-style: none;
+    border: 1px solid #800000;
+    overflow: auto;
+}
+
+.light-rounded-window-top {
+
+}
+
+.rounded-window-bottom {
+    border-style: none;
+    border: 1px solid #800000;
+    overflow: auto;
+}
+
+.method-name {
+    font-size: 12px;
+    font-family: Ubuntu, arial, sans-serif;
+}
+
+.method-content {
+    border-style: none;
+
+    border-width: 0px 0px 1px 0px;
+    margin-bottom: 10;
+    padding-bottom: 5px;
+    width: 80%;
+}
+
+.parameters {
+    font-size: 14px;
+    font-family: Ubuntu, arial, sans-serif;
+}
+
+.stack-trace {
+    white-space: pre;
+    font-family: Ubuntu, arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+.testng-xml {
+	font-size: 12px;
+    font-family: Ubuntu, arial, sans-serif;
+}
+
+.method-list-content {
+    margin-left: 10px;
+}
+
+.navigator-suite-content {
+    margin-left: 2px;
+    
+}
+
+.suite-section-title {
+    margin-top: 10px;
+    width: 80%;
+    border-style: none;
+    border-width: 1px 0px 0px 0px;
+    font-family: Ubuntu, arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.suite-section-content {
+	float:left;
+    
+}
+
+.top-banner-root {
+	height: 45px;
+
+    margin: 0px 0px 5px 0px;
+    font-family: Ubuntu, arial, sans-serif;
+    text-align: center;
+}
+
+.top-banner-title-font {
+    font-size: 20px;
+}
+
+.test-name {
+    font-family: Ubuntu, arial, sans-serif;
+    font-size: 16px;
+}
+
+.suite-icon {
+    padding: 5px;
+    float: right;
+    height: 20;
+}
+
+.test-group {
+    font: 20px 'Lucida Grande';
+    margin: 5px 5px 10px 5px;
+    border-width: 0px 0px 1px 0px;
+    border-style: none;
+    padding: 5px;
+}
+
+.test-group-name {
+    font-weight: bold;
+}
+
+.method-in-group {
+    font-size: 16px;
+    margin-left: 80px;
+}
+
+table.google-visualization-table-table {
+    width: 100%;
+}
+
+.reporter-method-name {
+    font-size: 14px;
+    font-family: Ubuntu, arial, sans-serif;
+}
+
+.reporter-method-output-div {
+    padding: 5px;
+    margin: 0px 0px 5px 20px;
+    font-size: 12px;
+    font-family: Ubuntu, arial, sans-serif;
+    border-width: 0px 0px 0px 1px;
+    border-style: none;
+}
+
+.ignored-class-div {
+    font-size: 14px;
+    font-family: Ubuntu, arial, sans-serif;
+}
+
+.ignored-methods-div {
+    padding: 5px;
+    margin: 0px 0px 5px 20px;
+    font-size: 12px;
+    font-family: Ubuntu, arial, sans-serif;
+    border-width: 0px 0px 0px 1px;
+    border-style: none;
+}
+
+.border-failed {
+    border-top-left-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+    border-style: none;
+    border-width: 0px 0px 0px 10px;
+    border-color: #f00;
+}
+
+.border-skipped {
+    border-top-left-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+    border-style: none;
+    border-width: 0px 0px 0px 10px;
+    border-color: #edc600;
+}
+
+.border-passed {
+    border-top-left-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+    border-style: none;
+    border-width: 0px 0px 0px 10px;
+    border-color: #19f52d;
+}
+
+.times-div {
+    text-align: center;
+    padding: 5px;
+}
+
+.suite-total-time {
+    font: 16px 'Lucida Grande';
+}
+
+.configuration-suite {
+    margin-left: 20px;
+}
+
+.configuration-test {
+    margin-left: 40px;
+}
+
+.configuration-class {
+    margin-left: 60px;
+}
+
+.configuration-method {
+    margin-left: 80px;
+}
+
+.test-method {
+    margin-left: 100px;
+}
+
+.chronological-class {
+    background-color: #0ccff;
+    border-style: none;
+    border-width: 0px 0px 1px 1px;
+}
+
+.method-start {
+    float: right;
+}
+
+.chronological-class-name {
+    padding: 0px 0px 0px 5px;
+    color: #008;
+}
+
+.after, .before, .test-method {
+    font-family: Ubuntu, arial, sans-serif;
+    font-size: 14px;
+}
+
+.navigator-suite-header {
+    font-size: 22px;
+	border: 1px solid #800000;
+    margin: 0px 10px 5px 0px;
+    background-color: #C2C2FF;
+    text-align: center;
+}
+
+.collapse-all-icon {
+    padding: 5px;
+    float: right;
+}

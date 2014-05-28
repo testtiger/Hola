@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="two"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="43.287">
+  <properties />
+  
+  
+            <testcase name="checkUserLogout" time="5.646" classname="com.diw.test.LoginTest" />
+                <testcase name="checkUserLogin" time="37.641" classname="com.diw.test.LoginTest" />
+      
+</testsuite>

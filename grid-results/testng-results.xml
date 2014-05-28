@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="diw" duration-ms="65991" started-at="2014-05-27T10:14:49Z" finished-at="2014-05-27T10:15:55Z">
+    <groups>
+    </groups>
+    <test name="first" duration-ms="65071" started-at="2014-05-27T10:14:49Z" finished-at="2014-05-27T10:15:54Z">
+      <class name="com.diw.test.LoginTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.LoginTest@7bca4b51]" name="setup" is-config="true" duration-ms="18627" started-at="2014-05-27T15:44:49Z" finished-at="2014-05-27T15:45:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[com.diw.main.GridManager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkUserLogin(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.LoginTest@7bca4b51]" name="checkUserLogin" duration-ms="42768" started-at="2014-05-27T15:45:08Z" finished-at="2014-05-27T15:45:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[diwakara.kumar77@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserLogin -->
+        <test-method status="PASS" signature="checkUserLogout()[pri:0, instance:com.diw.test.LoginTest@7bca4b51]" name="checkUserLogout" duration-ms="3421" started-at="2014-05-27T15:45:51Z" finished-at="2014-05-27T15:45:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserLogout -->
+        <test-method status="PASS" signature="tear()[pri:0, instance:com.diw.test.LoginTest@7bca4b51]" name="tear" is-config="true" duration-ms="248" started-at="2014-05-27T15:45:54Z" finished-at="2014-05-27T15:45:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+      </class> <!-- com.diw.test.LoginTest -->
+    </test> <!-- first -->
+    <test name="two" duration-ms="65991" started-at="2014-05-27T10:14:49Z" finished-at="2014-05-27T10:15:55Z">
+      <class name="com.diw.test.LoginTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.LoginTest@6056677a]" name="setup" is-config="true" duration-ms="21425" started-at="2014-05-27T15:44:49Z" finished-at="2014-05-27T15:45:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[com.diw.main.GridManager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkUserLogin(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.LoginTest@6056677a]" name="checkUserLogin" duration-ms="37641" started-at="2014-05-27T15:45:11Z" finished-at="2014-05-27T15:45:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[diwakara.kumar77@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserLogin -->
+        <test-method status="PASS" signature="checkUserLogout()[pri:0, instance:com.diw.test.LoginTest@6056677a]" name="checkUserLogout" duration-ms="5646" started-at="2014-05-27T15:45:48Z" finished-at="2014-05-27T15:45:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserLogout -->
+        <test-method status="PASS" signature="tear()[pri:0, instance:com.diw.test.LoginTest@6056677a]" name="tear" is-config="true" duration-ms="1276" started-at="2014-05-27T15:45:54Z" finished-at="2014-05-27T15:45:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+      </class> <!-- com.diw.test.LoginTest -->
+      <class name="com.diw.main.GridManager">
+        <test-method status="PASS" signature="setHubURL(java.lang.String)[pri:0, instance:com.diw.main.GridManager@db75080]" name="setHubURL" is-config="true" duration-ms="8" started-at="2014-05-27T15:44:49Z" finished-at="2014-05-27T15:44:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:4444/wd/hub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setHubURL -->
+      </class> <!-- com.diw.main.GridManager -->
+    </test> <!-- two -->
+  </suite> <!-- diw -->
+</testng-results>

@@ -1,0 +1,32 @@
+<suite name="diw" parallel="tests" thread-count="4">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	</listeners>
+
+	<!--Sauce Labs Hub URL
+		http://diwakara:adc64300-9183-46a5-b716-396e61b044e9@ondemand.saucelabs.com:80/wd/hub
+	-->
+	<!--loacl hub url
+		http://localhost:4444/wd/hub
+	-->
+	<parameter name="huburl" value="http://localhost:4444/wd/hub" />
+	<parameter name="email" value="diwakara.kumar77@gmail.com" />
+	<parameter name="pwd" value="123456" />
+	<parameter name="classname" value="com.diw.main.GridManager" />
+
+	<test name="first">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.diw.base.GridManager" />
+			<class name="com.diw.test.LoginTest" />
+		</classes>
+	</test>
+	<test name="two">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.diw.base.GridManager" />
+			<class name="com.diw.test.LoginTest" />
+		</classes>
+	</test>
+</suite>

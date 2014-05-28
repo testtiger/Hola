@@ -1,0 +1,76 @@
+<project name="Action_Bot" default="run">
+
+	<property name="src" location="./src" />
+	<property name="lib" location="./lib" />
+	<property name="bin" location="./bin" />
+	<property name="res" location="./test-output" />
+	<property name="bat" location="." />
+
+
+	<path id="myclasspath">
+		<fileset dir="${lib}">
+			<include name="*.jar" />
+			<include name="**/**.jar" />
+		</fileset>
+		<pathelement path="${bin}" />
+	</path>
+
+	<target name="clean" description="description">
+		<delete>
+			<fileset dir="${bin}">
+				<include name="*.class" />
+			</fileset>
+			<fileset dir="${res}">
+				<include name="*.*" />
+			</fileset>
+		</delete>
+		<mkdir dir="${bat}/grid-results" />
+	</target>
+
+	<target name="compile" description="clean" depends="clean">
+		<echo message="Compiling Java source files.........." />
+		<javac destdir="${bin}" includeantruntime="false">
+			<src path="${src}" />
+			<classpath refid="myclasspath" />
+		</javac>
+	</target>
+
+
+	<taskdef name="testng" classname="org.testng.TestNGAntTask">
+		<classpath>
+			<pathelement location="lib/testng-6.8.jar" />
+		</classpath>
+	</taskdef>
+	<!--
+	<target name="runhub">
+		<echo message="starting the Hub" />
+		<exec dir="." executable="cmd">
+			<arg line="/c start Start_Hub.bat" />
+		</exec>
+	</target>
+
+	<target name="runfire">
+		<echo message="starting the fire fox node" />
+		<exec dir="." executable="cmd">
+			<arg line="/c start firefoxnode.bat" />
+		</exec>
+	</target>
+
+	<target name="runchrome">
+		<echo message="starting the chrome node" />
+		<exec dir="." executable="cmd">
+			<arg line="/c start chromenode.bat" />
+		</exec>
+	</target>
+	-->
+	<!--listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter"-->
+	<target name="run" depends="compile">
+		<echo message="Started Running TestNG Suite............." />
+		<testng useDefaultListeners="true" outputdir="${bat}/grid-results"	>
+			<classpath refid="myclasspath" />
+			<xmlfileset dir="." includes="diw-grid.xml" />
+		</testng>
+	</target>
+
+</project>
+	

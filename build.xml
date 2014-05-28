@@ -1,0 +1,55 @@
+<project name="Action_Bot" default="run">
+
+	<property name="src" location="./src"/>
+	<property name="lib" location="./lib"/>
+	<property name="bin" location="./bin"/>
+	<property name="res" location="./test-output"/>
+	
+	
+	<path id="myclasspath">
+		<fileset dir="${lib}" >
+			  <include name="*.jar"/>
+			   <include name="**/**.jar"/>
+			   
+			</fileset>
+			<fileset dir="${bin}" >
+			   <include name="**/**.class"/>	   
+			</fileset>
+	   <pathelement path="${bin}"/>
+	</path>
+
+    <target name="clean" description="description">
+    	<delete>
+    		<fileset dir="${bin}" >
+    				  <include name="*.class"/>
+    		</fileset>
+			<fileset dir="${res}" >
+    				  <include name="*.*"/>
+    		</fileset>
+		</delete>
+    </target>
+	
+    <target name="compile"  description="clean" depends="clean" >
+		<echo message="Compiling Java source files.........."/>
+        <javac destdir="${bin}" includeantruntime="false">
+        	<src path="${src}"/>
+          	<classpath refid="myclasspath"/>
+        </javac>
+    </target>
+	
+<taskdef name="testng" classname="org.testng.TestNGAntTask">
+    <classpath>
+      <pathelement location="lib/testng-6.8.jar"/>
+    </classpath>
+ </taskdef>
+ 
+<target name="run" depends="compile"> 
+			<echo message="Running TestNG Suite ............"/>
+			<testng useDefaultListeners="true">
+				<classpath refid="myclasspath"/>
+			      <xmlfileset dir="." includes="diwng.xml"/>
+			 </testng>
+</target>
+	
+</project>
+	
