@@ -1,19 +1,13 @@
 body {
-
-	font-family: Ubuntu, arial, sans-serif; line-height: 1.8em;  margin: 1.8em 1em;
     margin: 0px 0px 5px 5px;
 }
 
 ul {
     margin: 0px;
-	font-size: 3.3em
-	font-family: Ubuntu, arial, sans-serif; 
 }
 
 li {
-   list-style-type: none;
-   border: 0px solid #C8C8AC;
-    
+    list-style-type: none;
 }
 
 a {
@@ -25,16 +19,15 @@ a:hover {
 }
 
 .navigator-selected {
-    background: #C5C9CB;
+    background: #ffa500;
 }
 
 .wrapper {
     position: absolute;
     top: 60px;
     bottom: 0;
-    left: 350px;
+    left: 400px;
     right: 0;
-	width: 920px;
     overflow: auto;
 }
 
@@ -43,63 +36,68 @@ a:hover {
     top: 60px;
     bottom: 0;
     left: 0;
-    width: 350px;
+    width: 400px;
     overflow-y: auto;
 }
 
 .suite {
     margin: 0px 10px 10px 0px;
-    background-color: #EBF3FF;
+    background-color: #fff8dc;
 }
 
 .suite-name {
     padding-left: 10px;
     font-size: 25px;
-    font-family: Ubuntu, arial, sans-serif;
+    font-family: Times;
 }
 
 .main-panel-header {
     padding: 5px;
-    background-color: #C2C2FF; //afeeee;
-    font-family: Ubuntu, arial, sans-serif;
+    background-color: #9FB4D9; //afeeee;
+    font-family: monospace;
     font-size: 18px;
 }
 
 .main-panel-content {
-    padding: 1px;
+    padding: 5px;
     margin-bottom: 10px;
-    background-color: #EBEBE6; //d0ffff;
+    background-color: #DEE8FC; //d0ffff;
 }
 
 .rounded-window {
-   background-color: #EBEBE6;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .rounded-window-top {
- 
-    border-style: none;
-    border: 1px solid #800000;
+    border-top-right-radius: 10px 10px;
+    border-top-left-radius: 10px 10px;
+    border-style: solid;
+    border-width: 1px;
     overflow: auto;
 }
 
 .light-rounded-window-top {
-
+    border-top-right-radius: 10px 10px;
+    border-top-left-radius: 10px 10px;
 }
 
 .rounded-window-bottom {
-    border-style: none;
-    border: 1px solid #800000;
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+    border-bottom-right-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
     overflow: auto;
 }
 
 .method-name {
     font-size: 12px;
-    font-family: Ubuntu, arial, sans-serif;
+    font-family: monospace;
 }
 
 .method-content {
-    border-style: none;
-
+    border-style: solid;
     border-width: 0px 0px 1px 0px;
     margin-bottom: 10;
     padding-bottom: 5px;
@@ -108,12 +106,12 @@ a:hover {
 
 .parameters {
     font-size: 14px;
-    font-family: Ubuntu, arial, sans-serif;
+    font-family: monospace;
 }
 
 .stack-trace {
     white-space: pre;
-    font-family: Ubuntu, arial, sans-serif;
+    font-family: monospace;
     font-size: 12px;
     font-weight: bold;
     margin-top: 0px;
@@ -121,8 +119,7 @@ a:hover {
 }
 
 .testng-xml {
-	font-size: 12px;
-    font-family: Ubuntu, arial, sans-serif;
+    font-family: monospace;
 }
 
 .method-list-content {
@@ -130,39 +127,44 @@ a:hover {
 }
 
 .navigator-suite-content {
-    margin-left: 2px;
-    
+    margin-left: 10px;
+    font: 12px 'Lucida Grande';
 }
 
 .suite-section-title {
     margin-top: 10px;
     width: 80%;
-    border-style: none;
+    border-style: solid;
     border-width: 1px 0px 0px 0px;
-    font-family: Ubuntu, arial, sans-serif;
+    font-family: Times;
     font-size: 18px;
     font-weight: bold;
 }
 
 .suite-section-content {
-	float:left;
-    
+    list-style-image: url(bullet_point.png);
 }
 
 .top-banner-root {
-	height: 45px;
-
+    position: absolute;
+    top: 0;
+    height: 45px;
+    left: 0;
+    right: 0;
+    padding: 5px;
     margin: 0px 0px 5px 0px;
-    font-family: Ubuntu, arial, sans-serif;
+    background-color: #0066ff;
+    font-family: Times;
+    color: #fff;
     text-align: center;
 }
 
 .top-banner-title-font {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .test-name {
-    font-family: Ubuntu, arial, sans-serif;
+    font-family: 'Lucida Grande';
     font-size: 16px;
 }
 
@@ -176,7 +178,7 @@ a:hover {
     font: 20px 'Lucida Grande';
     margin: 5px 5px 10px 5px;
     border-width: 0px 0px 1px 0px;
-    border-style: none;
+    border-style: solid;
     padding: 5px;
 }
 
@@ -195,36 +197,36 @@ table.google-visualization-table-table {
 
 .reporter-method-name {
     font-size: 14px;
-    font-family: Ubuntu, arial, sans-serif;
+    font-family: monospace;
 }
 
 .reporter-method-output-div {
     padding: 5px;
     margin: 0px 0px 5px 20px;
     font-size: 12px;
-    font-family: Ubuntu, arial, sans-serif;
+    font-family: monospace;
     border-width: 0px 0px 0px 1px;
-    border-style: none;
+    border-style: solid;
 }
 
 .ignored-class-div {
     font-size: 14px;
-    font-family: Ubuntu, arial, sans-serif;
+    font-family: monospace;
 }
 
 .ignored-methods-div {
     padding: 5px;
     margin: 0px 0px 5px 20px;
     font-size: 12px;
-    font-family: Ubuntu, arial, sans-serif;
+    font-family: monospace;
     border-width: 0px 0px 0px 1px;
-    border-style: none;
+    border-style: solid;
 }
 
 .border-failed {
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
-    border-style: none;
+    border-style: solid;
     border-width: 0px 0px 0px 10px;
     border-color: #f00;
 }
@@ -232,7 +234,7 @@ table.google-visualization-table-table {
 .border-skipped {
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
-    border-style: none;
+    border-style: solid;
     border-width: 0px 0px 0px 10px;
     border-color: #edc600;
 }
@@ -240,7 +242,7 @@ table.google-visualization-table-table {
 .border-passed {
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
-    border-style: none;
+    border-style: solid;
     border-width: 0px 0px 0px 10px;
     border-color: #19f52d;
 }
@@ -276,7 +278,7 @@ table.google-visualization-table-table {
 
 .chronological-class {
     background-color: #0ccff;
-    border-style: none;
+    border-style: solid;
     border-width: 0px 0px 1px 1px;
 }
 
@@ -290,15 +292,14 @@ table.google-visualization-table-table {
 }
 
 .after, .before, .test-method {
-    font-family: Ubuntu, arial, sans-serif;
+    font-family: monospace;
     font-size: 14px;
 }
 
 .navigator-suite-header {
     font-size: 22px;
-	border: 1px solid #800000;
     margin: 0px 10px 5px 0px;
-    background-color: #C2C2FF;
+    background-color: #deb887;
     text-align: center;
 }
 

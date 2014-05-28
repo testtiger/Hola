@@ -10,31 +10,19 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.diw.main.Manager;
-import com.diw.main.Manager;
+import com.diw.main.RootTest;
 import com.diw.page.LoginPage;
 import com.diw.page.MyAccount;
 
-public class LoginTest {
-	private Manager manager;
+public class LoginTest extends RootTest{
+
 	private WebDriver driver;
 	private static String url = "http://www.routeone.co.uk/";
 
 	@BeforeTest
-	@Parameters({ "browser", "classname" })
-	public void setup(String browser, String classname) {
-
-		try {
-			manager = (Manager) Class.forName(classname).newInstance();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		this.driver = manager.getDriver(browser);
+	public void setDriver(){
+		driver=super.getDriver();
 		driver.get(url);
-	}
-
-	@AfterTest
-	public void tear() {
-		manager.closeDriver(driver);
 	}
 
 	@Parameters({ "email", "pwd" })
