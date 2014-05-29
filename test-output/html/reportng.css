@@ -9,14 +9,14 @@ p                        {font-size: 1.3em;}
 td                       {font-size: 1.3em;}
 
 .header                  {font-size: 1.8em; font-weight: normal; text-align: left;}
-.passed                  {background-color: #C2FFC2;}
-.skipped                 {background-color: #ffaa00;}
-.failed                  {background-color: #ff4444;}
+.passed                  {background-color: #88ee88;color: black;}
+.skipped                 {background-color: #ffaa00;color: black;}
+.failed                  {background-color: #ff4444;color: black;}
 .failedConfig            {background-color: #800000; color: #ffffff}
 .skippedConfig           {background-color: #cc6600; color: #ffffff}
 .totalLabel              {font-weight: bold; background-color: #ffffff;}
 
-.suite                   {background-color: #E6FFFF; font-weight: normal;}
+.suite                   {background-color: #5494B1; font-weight: normal;color: #FFFFFF;}
 .test                    {background-color: #E8E8E8 ; padding-left: 2em;}
 .test .passed            {background-color:#88ee88;}
 .test .skipped           {background-color:#ffff77 ;}
@@ -36,7 +36,7 @@ td                       {font-size: 1.3em;}
 .number                  {text-align: right;}
 .zero                    {font-weight: normal;}
 .columnHeadings          {font-size: 1.2em;}
-.columnHeadings th       {font-weight: normal;}
+.columnHeadings th       {background-color: #5494B1;color: #FFFFFF;font-weight: normal;}
 
 .configTable             {border: 1px solid #800000; color: #800000; margin-bottom: 1.5em;}
 
