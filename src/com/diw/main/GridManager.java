@@ -48,26 +48,28 @@ public class GridManager implements Manager {
 
 	}
 
-	public void registerEvents(WebDriver driver) {
+	public WebDriver registerEvents(WebDriver driver) {
 		EventFiringWebDriver ef = new EventFiringWebDriver(driver);
 		driver = ef.register(new EventTracker());
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		return driver;
 	}
 
 	public  WebDriver setFirefoxDriver() throws MalformedURLException{
 		if(firefox_driver==null){
 			caps = DesiredCapabilities.firefox();
 			firefox_driver=new RemoteWebDriver(new URL(hub_URL), caps);
-			registerEvents(firefox_driver);
+			firefox_driver=registerEvents(firefox_driver);
 		}
 		return firefox_driver;
 	}
 	public WebDriver setChromeDriver() throws MalformedURLException{
 		if(chrome_driver==null){
 			caps = DesiredCapabilities.chrome();
+			//caps.setCapability("platform", "Windows 7");
 			chrome_driver=new RemoteWebDriver(new URL(hub_URL), caps);
-			registerEvents(chrome_driver);
+			chrome_driver=registerEvents(chrome_driver);
 		}
 		return chrome_driver;
 
@@ -76,7 +78,7 @@ public class GridManager implements Manager {
 		if(ie_driver==null){
 			caps =DesiredCapabilities.internetExplorer();
 			ie_driver=new RemoteWebDriver(new URL(hub_URL), caps);
-			registerEvents(ie_driver);
+			ie_driver=registerEvents(ie_driver);
 		}
 		return ie_driver;
 	}

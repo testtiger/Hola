@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
-
 import com.diw.Tracker.EventTracker;
 
 public class DriverManager implements Manager {
@@ -14,7 +13,9 @@ public class DriverManager implements Manager {
 
 	@Override
 	public WebDriver getDriver(String browser_name) {
-		setDriver(browser_name);
+		if(driver==null){
+			setDriver(browser_name);
+		}	
 		return driver;
 	}
 
@@ -27,7 +28,7 @@ public class DriverManager implements Manager {
 		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		registerEvents(driver);
+		driver=registerEvents(driver);
 	}
 
 	/**
@@ -35,9 +36,10 @@ public class DriverManager implements Manager {
 	 *            This method register the web driver type object & register
 	 *            with the web driver event listeners
 	 */
-	public void registerEvents(WebDriver driver) {
+	public WebDriver registerEvents(WebDriver driver) {
 		EventFiringWebDriver ef = new EventFiringWebDriver(driver);
 		driver = ef.register(new EventTracker());
+		return driver;
 	}
 
 	/**
