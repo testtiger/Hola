@@ -8,6 +8,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 
 import com.diw.main.Manager;
 
@@ -18,7 +19,7 @@ public class RootTest {
 	private Manager manager;
 	private WebDriver driver;
 
-	@BeforeTest
+	@BeforeClass
 	@Parameters({ "browser", "classname" })
 	public void setup(String browser, String classname) {
 		try {

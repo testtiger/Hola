@@ -19,7 +19,7 @@ public class LoginTest extends RootTest{
 	private WebDriver driver;
 	private static String url = "http://www.routeone.co.uk/";
 
-	@BeforeTest
+	@BeforeClass
 	public void setDriver(){
 		driver=super.getDriver();
 		driver.get(url);

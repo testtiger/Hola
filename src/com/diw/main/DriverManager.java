@@ -9,7 +9,7 @@ import org.testng.annotations.Parameters;
 import com.diw.Tracker.EventTracker;
 
 public class DriverManager implements Manager {
-	private WebDriver driver;
+	private static WebDriver driver;
 
 	@Override
 	public WebDriver getDriver(String browser_name) {
